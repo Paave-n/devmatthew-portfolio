@@ -12,31 +12,41 @@ import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 
 export default function Footer() {
     return (
-        <footer className=" border-t border-zinc-800 pt-4">
+        <footer className="border-t border-zinc-800 pt-4">
 
-            <div className=" mx-auto max-w-7xl px-6 ">
+            <div className="mx-auto max-w-7xl px-6">
 
-                <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1.2fr] mb-4">
+                <div className="mb-4 grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1.2fr]">
 
                     {/* LOGO */}
 
-                    <div >
-                        <div className="flex items-center  ">
+                    <motion.div
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        <div className="flex items-center">
 
                             <Image
                                 src="/images/mattlogo9.png"
                                 alt="MattDev AI"
                                 width={140}
                                 height={80}
-                                className=" h-auto w-28 object-contain md:mt-0 md:w-32 lg:w-36"
+                                className="h-auto w-28 object-contain md:mt-0 md:w-32 lg:w-36"
                             />
 
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* NAVIGATION */}
 
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, y: -30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.1 }}
+                    >
 
                         <p className="mb-4 text-xs uppercase tracking-[0.2em] text-zinc-500">
                             Navigation
@@ -46,46 +56,51 @@ export default function Footer() {
 
                             <a
                                 href="/"
-                                className="transition transition-colors duration-300 hover:text-violet-400"
+                                className="transition-colors duration-300 hover:text-violet-400"
                             >
                                 Home
                             </a>
 
                             <a
                                 href="/#projects"
-                                className="transition transition-colors duration-300 hover:text-violet-400"
+                                className="transition-colors duration-300 hover:text-violet-400"
                             >
                                 Projects
                             </a>
 
                             <a
                                 href="/#services"
-                                className="transition transition-colors duration-300 hover:text-violet-400"
+                                className="transition-colors duration-300 hover:text-violet-400"
                             >
                                 Services
                             </a>
 
                             <a
                                 href="/#about"
-                                className="transition transition-colors duration-300 hover:text-violet-400"
+                                className="transition-colors duration-300 hover:text-violet-400"
                             >
                                 About
                             </a>
 
                             <a
                                 href="/contact"
-                                className="transition transition-colors duration-300 hover:text-violet-400"
+                                className="transition-colors duration-300 hover:text-violet-400"
                             >
                                 Contact
                             </a>
 
                         </div>
 
-                    </div>
+                    </motion.div>
 
                     {/* SOCIALS */}
 
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, y: -30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.15 }}
+                    >
 
                         <p className="mb-4 text-xs uppercase tracking-[0.2em] text-zinc-500">
                             Follow Me
@@ -116,15 +131,21 @@ export default function Footer() {
 
                         </div>
 
-                    </div>
+                    </motion.div>
 
                     {/* CONTACT */}
 
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                    >
 
                         <p className="mb-4 text-xs uppercase tracking-[0.2em] text-zinc-500">
                             Let's Connect
                         </p>
+
                         <div className="space-y-3">
 
                             <div className="flex items-center gap-3">
@@ -160,13 +181,19 @@ export default function Footer() {
 
                         </div>
 
-                    </div>
+                    </motion.div>
 
                 </div>
 
                 {/* BOTTOM */}
 
-                <div className=" flex flex-col items-center justify-between gap-4 border-t border-zinc-800 py-2 text-sm text-white lg:flex-row">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: 0.25 }}
+                    className="flex flex-col items-center justify-between gap-4 border-t border-zinc-800 py-2 text-sm text-white lg:flex-row"
+                >
 
                     <p>
                         © 2025 DEVMATTHEW. All rights reserved.
@@ -176,17 +203,18 @@ export default function Footer() {
 
                         <a
                             href="/"
-                            className="transition transition-colors duration-300 hover:text-violet-400"
+                            className="transition-colors duration-300 hover:text-violet-400"
                         >
                             Privacy Policy
                         </a>
 
                         <a
                             href="/"
-                            className="transition transition-colors duration-300 hover:text-violet-400"
+                            className="transition-colors duration-300 hover:text-violet-400"
                         >
                             Terms of Service
                         </a>
+
                         <button
                             onClick={() =>
                                 window.scrollTo({
@@ -202,7 +230,7 @@ export default function Footer() {
 
                     </div>
 
-                </div>
+                </motion.div>
 
             </div>
 
