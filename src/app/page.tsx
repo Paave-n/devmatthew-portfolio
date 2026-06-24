@@ -277,7 +277,7 @@ export default function Home() {
 
                 <div className="absolute -left-6 top-24 hidden lg:flex h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md">
 
-                  <p className="text-sm text-zinc-400">
+                  <p className="text-center text-sm  text-zinc-400">
                     Performance
                   </p>
 
@@ -313,7 +313,7 @@ export default function Home() {
 
                   </div>
 
-                  <p className="text-sm text-zinc-400">
+                  <p className="text-center text-sm text-zinc-400">
                     Lighthouse Score
                   </p>
 
@@ -323,16 +323,16 @@ export default function Home() {
 
                 <div className="absolute -right-6 bottom-24 hidden lg:flex h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md">
 
-                  <p className="text-sm text-zinc-400">
+                  <p className="text-center text-sm text-zinc-400">
                     Conversion Rate
                   </p>
 
-                  <h3 className="text-4xl font-bold">
+                  <h3 className="text-center text-4xl font-bold">
                     +27%
                   </h3>
 
                   <svg
-                    className="h-12 w-full"
+                    className="mx-auto h-12 w-full"
                     viewBox="0 0 120 40"
                     fill="none"
                   >
@@ -351,7 +351,7 @@ export default function Home() {
                     <circle cx="120" cy="5" r="3" fill="#8b5cf6" />
                   </svg>
 
-                  <p className="text-sm text-zinc-400">
+                  <p className="text-center text-sm text-zinc-400">
                     vs previous LP
                   </p>
 
@@ -359,8 +359,8 @@ export default function Home() {
               </div>
 
             </div>
-            <div className="mt-4 justify-center lg:hidden">
-              <div className="rounded-full border border-zinc-800 bg-black/80 px-5 py-2 text-sm text-zinc-400 backdrop-blur">
+            <div className="mt-4 flex justify-center lg:hidden">
+              <div className="inline-flex items-center rounded-full border border-zinc-800 bg-black/80 px-5 py-2 text-sm text-zinc-400 backdrop-blur">
                 Shopify Plus
                 <span className="mx-3 text-zinc-600">•</span>
                 CRO
@@ -799,14 +799,14 @@ export default function Home() {
                     />
                     <div className="mb-4">
 
-                      <div className="mb-3 flex items-start justify-between gap-4">
+                      <div className="mb-3 flex flex-col gap-2">
 
                         <h3 className="text-2xl font-semibold">
                           {project.name}
                         </h3>
 
-                        <div className="w-fit">
-                          <span className="whitespace-nowrap rounded-full border border-violet-500/20 bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
+                        <div>
+                          <span className="rounded-full border border-violet-500/20 bg-violet-500/10 px-3 py-1 text-xs font-medium text-violet-400">
                             {project.role}
                           </span>
                         </div>
@@ -957,7 +957,7 @@ export default function Home() {
                   ❝
                 </div>
 
-                <p className="mb-10 max-w-[600px] text-base leading-8 text-zinc-300">
+                <p className="mb-10 max-w-[600px] text-base leading-7 text-zinc-400">
                   {testimonials[activeTestimonial].quote}
                 </p>
 

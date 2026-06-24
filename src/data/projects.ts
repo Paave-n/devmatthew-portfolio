@@ -164,7 +164,7 @@ export const projects = {
         industry: "Fashion & Accessories",
         year: "2024-Present",
 
-        image: "/images/beautifuldisaster.png",
+        image: "/images/beautifuldisaster.PNG",
 
         liveUrl: "https://www.bdrocks.com",
 
