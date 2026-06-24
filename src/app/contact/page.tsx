@@ -105,7 +105,7 @@ export default function ContactPage() {
                                         </p>
 
                                         <a
-                                            href="mailto:hello@devmatthew.co"
+                                            href="mailto:hello@devmatthew.cogit"
                                             className="break-all text-zinc-300 transition hover:text-white"
                                         >
                                             hello@devmatthew.co
