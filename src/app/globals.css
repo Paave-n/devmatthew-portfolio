@@ -35,4 +35,6 @@ body {
   filter: blur(120px);
   border-radius: 9999px;
 }
-
+html {
+  scrollbar-gutter: stable;
+}
