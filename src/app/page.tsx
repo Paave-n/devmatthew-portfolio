@@ -938,7 +938,7 @@ export default function Home() {
                 </p>
 
                 <p className="mt-4 text-sm leading-7 text-zinc-400">
-                  If you're looking for a faster, higher-converting storefront that scales with your business, you're in the right place.
+                  If you're looking to launch faster and scale a higher-converting storefront through AI-powered development workflows, you're in the right place.
                 </p>
 
               </div>
