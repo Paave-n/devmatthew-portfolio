@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Matthew | Shopify Plus Developer",
+  title: "devmatthew | Shopify Plus Developer",
   description:
     "Shopify Plus Developer & AI-Augmented Builder helping ecommerce brands scale through custom development and conversion-focused experiences.",
 
