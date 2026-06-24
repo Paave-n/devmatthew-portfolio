@@ -129,7 +129,7 @@ export default function Footer() {
                             <div className="flex items-center gap-3">
 
                                 <a
-                                    href="mailto:hello@preciousasubiaro.com"
+                                    href="mailto:hello@devmatthew.co"
                                     className="flex items-center gap-3 transition hover:text-violet-400"
                                 >
 
@@ -138,7 +138,7 @@ export default function Footer() {
                                     </div>
 
                                     <span className="text-sm text-zinc-300 transition hover:text-violet-400">
-                                        hello@preciousasubiaro.com
+                                        hello@devmatthew.co
                                     </span>
 
                                 </a>
@@ -168,7 +168,7 @@ export default function Footer() {
                 <div className=" flex flex-col items-center justify-between gap-4 border-t border-zinc-800 py-2 text-sm text-white lg:flex-row">
 
                     <p>
-                        © 2025 Precious Asubiaro. All rights reserved.
+                        © 2025 DEVMATTHEW. All rights reserved.
                     </p>
 
                     <div className="flex gap-6">

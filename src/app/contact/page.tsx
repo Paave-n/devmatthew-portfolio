@@ -105,10 +105,10 @@ export default function ContactPage() {
                                         </p>
 
                                         <a
-                                            href="mailto:hello@preciousasubiaro.com"
+                                            href="mailto:hello@devmatthew.co"
                                             className="break-all text-zinc-300 transition hover:text-white"
                                         >
-                                            hello@preciousasubiaro.com
+                                            hello@devmatthew.co
                                         </a>
                                     </div>
 
