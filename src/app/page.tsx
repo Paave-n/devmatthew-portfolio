@@ -161,7 +161,7 @@ export default function Home() {
 
               {/* LEFT */}
 
-              <div className="lg:mt-6">
+              <div className="relative z-10 lg:mt-6">
                 <p className="mb-5 text-xs md:text-sm uppercase tracking-[0.2em] bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
                   Shopify Plus Developer & AI-Augmented Builder
                 </p>
@@ -199,7 +199,7 @@ export default function Home() {
                   and AI-assisted development workflows.
                 </p>
 
-                <div className="flex flex-wrap gap-3">
+                <div className="relative z-10 flex flex-wrap gap-3">
                   <a
                     href="#projects"
                     className="rounded-xl bg-white px-5 py-2.5 font-medium text-black transition hover:opacity-90"
@@ -221,10 +221,10 @@ export default function Home() {
               {/* RIGHT */}
 
               <div className="relative lg:pl-0">
-                <div className="absolute inset-0 bg-violet-500/10 blur-[120px]" />
+                <div className="absolute inset-0 pointer-events-none bg-violet-500/10 blur-[120px]" />
                 <div className="relative">
 
-                  <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
                     <div className="h-[500px] w-[500px] rounded-full bg-violet-500/15 blur-[220px]" />
                   </div>
 
