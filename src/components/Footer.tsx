@@ -20,13 +20,14 @@ export default function Footer() {
 
                     {/* LOGO */}
 
-                    <motion.div
-                        initial={{ opacity: 0, x: -40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                    >
-                        <div className="flex items-center">
+                    <div className="flex items-center">
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                        >
 
                             <Image
                                 src="/images/mattlogo9.png"
@@ -35,17 +36,17 @@ export default function Footer() {
                                 height={80}
                                 className="h-auto w-28 object-contain md:mt-0 md:w-32 lg:w-36"
                             />
+                        </motion.div>
+                    </div>
 
-                        </div>
-                    </motion.div>
 
                     {/* NAVIGATION */}
 
                     <motion.div
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8, delay: 0.1 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
                     >
 
                         <p className="mb-4 text-xs uppercase tracking-[0.2em] text-zinc-500">
@@ -96,10 +97,10 @@ export default function Footer() {
                     {/* SOCIALS */}
 
                     <motion.div
-                        initial={{ opacity: 0, y: -30 }}
+                        initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.8, delay: 0.15 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
                     >
 
                         <p className="mb-4 text-xs uppercase tracking-[0.2em] text-zinc-500">
@@ -136,8 +137,8 @@ export default function Footer() {
                     {/* CONTACT */}
 
                     <motion.div
-                        initial={{ opacity: 0, x: 40 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
@@ -187,50 +188,71 @@ export default function Footer() {
 
                 {/* BOTTOM */}
 
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.25 }}
+                <div
+
                     className="flex flex-col items-center justify-between gap-4 border-t border-zinc-800 py-2 text-sm text-white lg:flex-row"
                 >
-
-                    <p>
-                        © 2025 DEVMATTHEW. All rights reserved.
-                    </p>
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                    >
+                        <p>
+                            © 2025 DEVMATTHEW. All rights reserved.
+                        </p>
+                    </motion.div>
 
                     <div className="flex gap-6">
-
-                        <a
-                            href="/"
-                            className="transition-colors duration-300 hover:text-violet-400"
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            Privacy Policy
-                        </a>
-
-                        <a
-                            href="/"
-                            className="transition-colors duration-300 hover:text-violet-400"
+                            <a
+                                href="/"
+                                className="transition-colors duration-300 hover:text-violet-400"
+                            >
+                                Privacy Policy
+                            </a>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            Terms of Service
-                        </a>
-
-                        <button
-                            onClick={() =>
-                                window.scrollTo({
-                                    top: 0,
-                                    behavior: "smooth",
-                                })
-                            }
-                            className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-800 bg-black transition hover:border-violet-500/40 hover:text-violet-400"
-                            aria-label="Back to top"
+                            <a
+                                href="/"
+                                className="transition-colors duration-300 hover:text-violet-400"
+                            >
+                                Terms of Service
+                            </a>
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
                         >
-                            <HiArrowUp size={18} />
-                        </button>
+                            <button
+                                onClick={() =>
+                                    window.scrollTo({
+                                        top: 0,
+                                        behavior: "smooth",
+                                    })
+                                }
+                                className="flex h-11 w-11 items-center justify-center rounded-full border border-zinc-800 bg-black transition hover:border-violet-500/40 hover:text-violet-400"
+                                aria-label="Back to top"
+                            >
+                                <HiArrowUp size={18} />
+                            </button>
+                        </motion.div>
 
                     </div>
 
-                </motion.div>
+                </div>
 
             </div>
 

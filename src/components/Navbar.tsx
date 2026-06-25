@@ -15,10 +15,10 @@ export default function Navbar() {
                 {/* LOGO */}
 
                 <motion.div
-                    initial={{ opacity: 0, x: -40 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="flex items-center"
+                    initial={{ opacity: 0, y: -30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="hidden gap-14 text-sm text-white md:flex"
                 >
                     <Image
                         src="/images/mattlogo9.png"
@@ -34,7 +34,7 @@ export default function Navbar() {
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.1 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
                     className="hidden gap-14 text-sm text-white md:flex"
                 >
                     <a
@@ -86,10 +86,10 @@ export default function Navbar() {
                 {/* CTA */}
 
                 <motion.div
-                    initial={{ opacity: 0, x: 40 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: -30 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="hidden sm:block"
+                    className="hidden gap-14 text-sm text-white md:flex"
                 >
                     <a
                         href="https://calendly.com/devmatthew"
