@@ -74,18 +74,24 @@ export default function Navbar() {
                 </motion.div>
 
                 {/* MOBILE MENU BUTTON */}
+                <motion.div
+                    initial={{ opacity: 0, y: -30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
 
-                <button
-                    onClick={() => setMenuOpen(!menuOpen)}
-                    className="flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-500 text-xl md:hidden"
-                    aria-label="Toggle Menu"
                 >
-                    {menuOpen ? "×" : "☰"}
-                </button>
+                    <button
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        className="flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-500 text-xl md:hidden"
+                        aria-label="Toggle Menu"
+                    >
+                        {menuOpen ? "×" : "☰"}
+                    </button>
+                </motion.div>
 
                 {/* CTA */}
 
-               <motion.div
+                <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
