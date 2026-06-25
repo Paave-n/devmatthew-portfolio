@@ -933,11 +933,11 @@ export default function Home() {
 
                 </div>
 
-                <p className="mt-6 text-sm leading-7 text-zinc-400">
+                <p className="mt-6 text-base leading-7 text-zinc-400">
                   I've helped ecommerce brands over the years improve their Shopify stores through custom development, conversion optimization, and ongoing technical support.
                 </p>
 
-                <p className="mt-4 text-sm leading-7 text-zinc-400">
+                <p className="mt-4 text-base leading-7 text-zinc-400">
                   If you're looking to launch faster and scale a higher-converting storefront through AI-powered development workflows, you're in the right place.
                 </p>
 

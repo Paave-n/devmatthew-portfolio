@@ -18,7 +18,7 @@ export default function Navbar() {
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="hidden gap-14 text-sm text-white md:flex"
+                    className="flex items-center"
                 >
                     <Image
                         src="/images/mattlogo9.png"
@@ -85,11 +85,11 @@ export default function Navbar() {
 
                 {/* CTA */}
 
-                <motion.div
+               <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="hidden gap-14 text-sm text-white md:flex"
+                    className="hidden sm:block"
                 >
                     <a
                         href="https://calendly.com/devmatthew"
