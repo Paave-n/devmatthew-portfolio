@@ -9,6 +9,7 @@ import {
     FaXTwitter,
 } from "react-icons/fa6";
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
+import { SiUpwork } from "react-icons/si";
 
 export default function Footer() {
     return (
@@ -104,36 +105,65 @@ export default function Footer() {
                     >
 
                         <p className="mb-4 text-xs uppercase tracking-[0.2em] text-zinc-500">
-                            Follow Me
+                            Profiles
                         </p>
 
-                        <div className="flex gap-3">
+                        <div className="space-y-3">
+
+                            {/* UPWORK */}
 
                             <a
-                                href="/"
-                                className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition hover:border-violet-500/40 hover:text-violet-400"
+                                href="https://www.upwork.com/freelancers/~010bca08d79977a10f?companyReference=1697956834210066433&mp_source=share"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center gap-3"
                             >
-                                <FaGithub size={14} />
+                                <div className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition-all duration-300 group-hover:border-violet-500/40 group-hover:text-violet-400">
+                                    <SiUpwork size={15} />
+                                </div>
+
+                                <span className="text-sm text-zinc-300 transition-colors duration-300 group-hover:text-violet-400">
+                                    Upwork
+                                </span>
                             </a>
 
-                            <a
-                                href="/"
-                                className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition hover:border-violet-500/40 hover:text-violet-400"
-                            >
-                                <FaLinkedinIn size={14} />
-                            </a>
+                            {/* GITHUB */}
 
                             <a
-                                href="/"
-                                className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition hover:border-violet-500/40 hover:text-violet-400"
+                                href="https://github.com/Mat408"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center gap-3"
                             >
-                                <FaXTwitter size={13} />
+                                <div className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition-all duration-300 group-hover:border-violet-500/40 group-hover:text-violet-400">
+                                    <FaGithub size={15} />
+                                </div>
+
+                                <span className="text-sm text-zinc-300 transition-colors duration-300 group-hover:text-violet-400">
+                                    GitHub
+                                </span>
+                            </a>
+
+                            {/* LINKEDIN */}
+
+                            <a
+                                href="https://www.linkedin.com/in/matthew-ikhinobele-9693b841a"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center gap-3"
+                            >
+                                <div className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition-all duration-300 group-hover:border-violet-500/40 group-hover:text-violet-400">
+                                    <FaLinkedinIn size={15} />
+                                </div>
+
+                                <span className="text-sm text-zinc-300 transition-colors duration-300 group-hover:text-violet-400">
+                                    LinkedIn
+                                </span>
                             </a>
 
                         </div>
 
                     </motion.div>
-
                     {/* CONTACT */}
 
                     <motion.div
@@ -153,14 +183,14 @@ export default function Footer() {
 
                                 <a
                                     href="mailto:hello@devmatthew.co"
-                                    className="flex items-center gap-3 transition hover:text-violet-400"
+                                    className="group flex items-center gap-3"
                                 >
 
-                                    <div className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition hover:border-violet-500/40">
+                                    <div className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition-all duration-300 group-hover:border-violet-500/40 group-hover:text-violet-400">
                                         <HiOutlineMail size={15} />
                                     </div>
 
-                                    <span className="text-sm text-zinc-300 transition hover:text-violet-400">
+                                    <span className="text-sm text-zinc-300 transition-colors duration-300 group-hover:text-violet-400">
                                         hello@devmatthew.co
                                     </span>
 
@@ -168,13 +198,13 @@ export default function Footer() {
 
                             </div>
 
-                            <div className="flex items-center gap-3">
+                            <div className="group flex items-center gap-3">
 
-                                <div className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition hover:text-violet-400">
+                                <div className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition-all duration-300 group-hover:border-violet-500/40 group-hover:text-violet-400">
                                     <HiOutlineLocationMarker size={15} />
                                 </div>
 
-                                <span className="text-sm text-zinc-300">
+                                <span className="text-sm text-zinc-300 transition-colors duration-300 group-hover:text-violet-400">
                                     Remote • Available Worldwide
                                 </span>
 

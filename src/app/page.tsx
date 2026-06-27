@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -48,6 +49,18 @@ export default function Home() {
       (prev) => (prev + 1) % testimonials.length
     );
   };
+  const [isPaused, setIsPaused] = useState(false);
+  useEffect(() => {
+    if (isPaused) return;
+
+    const interval = setInterval(() => {
+      setActiveTestimonial(
+        (prev) => (prev + 1) % testimonials.length
+      );
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isPaused]);
 
   const prevTestimonial = () => {
     setActiveTestimonial(
@@ -919,12 +932,40 @@ export default function Home() {
                 <p className="mt-4 text-base leading-7 text-zinc-400">
                   If you're looking to launch faster and scale a higher-converting storefront through AI-powered development workflows, you're in the right place.
                 </p>
+                <div className="mt-6 inline-flex flex-wrap items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/60 px-4 py-2 text-sm text-zinc-300">
+
+                  <a
+                    href="https://www.upwork.com/freelancers/~010bca08d79977a10f?companyReference=1697956834210066433&mp_source=share"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-violet-400 transition-colors duration-300 hover:text-violet-300"
+                  >
+                    Upwork
+                  </a>
+
+                  <span className="text-zinc-600">•</span>
+
+                  <span>$70k+ Earned</span>
+
+                  <span className="text-zinc-600">•</span>
+
+                  <span>Top Rated Plus</span>
+
+                  <span className="text-zinc-600">•</span>
+
+                  <span>100% Job Success</span>
+
+                </div>
 
               </div>
 
               {/* TESTIMONIAL */}
 
-              <div className="rounded-2xl border border-zinc-800 bg-black/40 p-6">
+              <div
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+                className="rounded-2xl border border-zinc-800 bg-black/40 p-6 min-h-[360px]"
+              >
 
                 <p className="mb-3 text-xs uppercase tracking-[0.2em]">
                   <span className="bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
@@ -953,6 +994,7 @@ export default function Home() {
                     />
 
                     <div>
+
                       <h4 className="font-semibold">
                         {testimonials[activeTestimonial].name}
                       </h4>
@@ -960,41 +1002,47 @@ export default function Home() {
                       <p className="text-sm text-zinc-500">
                         {testimonials[activeTestimonial].role}
                       </p>
+
                     </div>
-
-                  </div>
-
-                  <div className="flex gap-2">
-
-                    <button
-                      onClick={prevTestimonial}
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-800 transition hover:border-violet-500/40"
-                    >
-                      ←
-                    </button>
-
-                    <button
-                      onClick={nextTestimonial}
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-zinc-800 transition hover:border-violet-500/40"
-                    >
-                      →
-                    </button>
 
                   </div>
 
                 </div>
 
-                <div className="mt-6 flex gap-2">
-                  {testimonials.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setActiveTestimonial(index)}
-                      className={`h-2 rounded-full transition-all ${index === activeTestimonial
-                        ? "w-8 bg-violet-500"
-                        : "w-2 bg-zinc-700"
-                        }`}
-                    />
-                  ))}
+                <div className="mt-6 flex items-center justify-center gap-5">
+
+                  <button
+                    onClick={prevTestimonial}
+                    className="text-zinc-500 transition hover:text-violet-400"
+                    aria-label="Previous testimonial"
+                  >
+                    <HiChevronLeft size={22} />
+                  </button>
+
+                  <div className="flex gap-2">
+
+                    {testimonials.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setActiveTestimonial(index)}
+                        className={`h-2 rounded-full transition-all duration-300 ${index === activeTestimonial
+                            ? "w-8 bg-violet-500"
+                            : "w-2 bg-zinc-700 hover:bg-zinc-500"
+                          }`}
+                        aria-label={`Go to testimonial ${index + 1}`}
+                      />
+                    ))}
+
+                  </div>
+
+                  <button
+                    onClick={nextTestimonial}
+                    className="text-zinc-500 transition hover:text-violet-400"
+                    aria-label="Next testimonial"
+                  >
+                    <HiChevronRight size={22} />
+                  </button>
+
                 </div>
 
               </div>
