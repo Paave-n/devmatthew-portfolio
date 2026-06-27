@@ -643,22 +643,25 @@ export default function Home() {
                   {[
                     "Shopify Plus",
                     "Liquid",
+                    "Theme Development",
+                    "Custom Sections",
+                    "Shopify Functions",
+                    "Shopify Flow & Automation",
+                    "Metafields",
+                    "Storefront API",
+                    "Admin API",
+                    "GraphQL",
+                    "Klaviyo",
+                    "Recharge",
+                    "Performance Optimization",
+                    "Conversion Rate Optimization",
+                    "Store Management",
                     "JavaScript",
                     "TypeScript",
                     "React",
                     "Next.js",
                     "Tailwind CSS",
-                    "HTML",
-                    "CSS",
-                    "Klaviyo",
-                    "Recharge",
-                    "Metafields",
-                    "Shopify Functions",
                     "Git",
-                    "GitHub",
-                    "REST API",
-                    "GraphQL",
-                    "JSON"
                   ].map((skill) => (
                     <span
                       key={skill}
@@ -1026,8 +1029,8 @@ export default function Home() {
                         key={index}
                         onClick={() => setActiveTestimonial(index)}
                         className={`h-2 rounded-full transition-all duration-300 ${index === activeTestimonial
-                            ? "w-8 bg-violet-500"
-                            : "w-2 bg-zinc-700 hover:bg-zinc-500"
+                          ? "w-8 bg-violet-500"
+                          : "w-2 bg-zinc-700 hover:bg-zinc-500"
                           }`}
                         aria-label={`Go to testimonial ${index + 1}`}
                       />
