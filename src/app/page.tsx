@@ -275,60 +275,34 @@ export default function Home() {
 
                 {/* PERFORMANCE CARD */}
 
-                <div className="absolute -left-6 top-24 hidden lg:flex h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md">
+                <div className="absolute -left-6 top-24 hidden h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md lg:flex">
 
-                  <p className="text-center text-sm  text-zinc-400">
-                    Performance
+                  <p className="text-center text-sm text-zinc-400">
+                    Annual Sales
                   </p>
 
-                  <div className="relative flex items-center justify-center">
-
-                    <svg width="90" height="90" viewBox="0 0 100 100">
-                      <circle
-                        cx="50"
-                        cy="50"
-                        r="38"
-                        stroke="#27272a"
-                        strokeWidth="5"
-                        fill="none"
-                      />
-
-                      <circle
-                        cx="50"
-                        cy="50"
-                        r="38"
-                        stroke="#8b5cf6"
-                        strokeWidth="5"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeDasharray="200"
-                        strokeDashoffset="45"
-                        transform="rotate(-90 50 50)"
-                      />
-                    </svg>
-
-                    <div className="absolute text-3xl font-bold">
-                      98
-                    </div>
-
+                  <div className="flex flex-1 items-center justify-center">
+                    <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
+                      $6.1M+
+                    </h3>
                   </div>
 
                   <p className="text-center text-sm text-zinc-400">
-                    Lighthouse Score
+                    2025
                   </p>
 
                 </div>
 
                 {/* CONVERSION CARD */}
 
-                <div className="absolute -right-6 bottom-24 hidden lg:flex h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md">
+                <div className="absolute -right-6 bottom-24 hidden h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md lg:flex">
 
                   <p className="text-center text-sm text-zinc-400">
                     Conversion Rate
                   </p>
 
-                  <h3 className="text-center text-4xl font-bold">
-                    +27%
+                  <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
+                    3.13%
                   </h3>
 
                   <svg
@@ -338,21 +312,26 @@ export default function Home() {
                   >
                     <path
                       d="M0 30
-                    C20 25,
-                    35 35,
-                    55 20
-                    S90 25,
-                    120 5"
+         C20 25,
+         35 35,
+         55 20
+         S90 25,
+         120 5"
                       stroke="#8b5cf6"
                       strokeWidth="3"
                       strokeLinecap="round"
                     />
 
-                    <circle cx="120" cy="5" r="3" fill="#8b5cf6" />
+                    <circle
+                      cx="120"
+                      cy="5"
+                      r="3"
+                      fill="#8b5cf6"
+                    />
                   </svg>
 
                   <p className="text-center text-sm text-zinc-400">
-                    vs previous LP
+                    Annual Average
                   </p>
 
                 </div>

@@ -174,6 +174,9 @@ export default async function ProjectPage({
                         <h2 className="mb-3 text-2xl font-bold md:text-3xl">
                             Results
                         </h2>
+                        <p className="mb-6 text-sm text-zinc-500">
+                            Performance Snapshot ({project.snapshot})
+                        </p>
 
                         <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
 
@@ -182,7 +185,7 @@ export default async function ProjectPage({
                                     key={result.label}
                                     className="rounded-2xl border border-zinc-800 p-4 md:p-6"
                                 >
-                                    <p className="mb-2 text-3xl font-bold text-green-400 md:text-4xl">
+                                    <p className="mb-2 break-words text-2xl font-bold text-green-400 md:text-4xl">
                                         {result.value}
                                     </p>
 

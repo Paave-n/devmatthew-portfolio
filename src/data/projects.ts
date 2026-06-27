@@ -6,6 +6,7 @@ export const projects = {
         year: "2024-Present",
 
         image: "/images/project-1.png",
+        snapshot: "Jan 2025 – Jan 2026",
 
         liveUrl: "https://clutchcharger.com",
 
@@ -61,10 +62,10 @@ export const projects = {
         ],
 
         results: [
-            { value: "$4.2M+", label: "Top Product Revenue" },
-            { value: "111K+", label: "Units Sold" },
-            { value: "3–4%", label: "Average Conversion Rate" },
-            { value: "45%", label: "Peak Returning Customer Rate" },
+            { value: "$6.1M+", label: "Annual Online Sales" },
+            { value: "$74.56", label: "Average Order Value" },
+            { value: "3.13%", label: "Conversion Rate" },
+            { value: "32.5%", label: "Returning Customer Rate" },
         ],
 
         stack: [
@@ -88,6 +89,7 @@ export const projects = {
         year: "2023 – Present",
 
         image: "/images/freidarothman.png",
+        snapshot: "Jan 2025 – Jan 2026",
 
         liveUrl: "https://www.freidarothman.com",
 
@@ -140,10 +142,10 @@ export const projects = {
         ],
 
         results: [
-            { value: "2+ Years", label: "Ongoing Partnership" },
-            { value: "100+", label: "Technical Requests Delivered" },
-            { value: "Continuous", label: "Storefront Improvements" },
-            { value: "Luxury", label: "Premium Brand Experience" },
+            { value: "$1.4M+", label: "Annual Total Sales" },
+            { value: "$362", label: "Average Order value" },
+            { value: "43.1%", label: "Checkout Conversion Rate" },
+            { value: "41.73%", label: "Returning Customer Rate" },
         ],
 
         stack: [
@@ -165,6 +167,7 @@ export const projects = {
         year: "2024-Present",
 
         image: "/images/beautifuldisaster.PNG",
+        snapshot: "Jan 2025 – Jan 2026",
 
         liveUrl: "https://www.bdrocks.com",
 
@@ -205,10 +208,10 @@ export const projects = {
         ],
 
         results: [
-            { value: "2+ Years", label: "Ongoing Partnership" },
-            { value: "Continuous", label: "Promotional Campaign Support" },
-            { value: "Reduced", label: "Fraud Risk Exposure" },
-            { value: "Ongoing", label: "Storefront Optimization" },
+            { value: "$2.1M+", label: "Annual Online Sales" },
+            { value: "1.87%", label: "Conversion Rate" },
+            { value: "$86.63", label: "Average Order Value" },
+            { value: "64.7%", label: "Returning Customer Rate" },
         ],
 
         stack: [
@@ -232,6 +235,7 @@ export const projects = {
         year: "2024",
 
         image: "/images/hilma.png",
+        snapshot: "",
 
         liveUrl: "https://www.hilma.co",
 
@@ -301,6 +305,7 @@ export const projects = {
         year: "2022",
 
         image: "/images/eatdoughy.png",
+        snapshot: "",
 
         liveUrl: "https://eatdoughy.com",
 
@@ -374,6 +379,7 @@ export const projects = {
         year: "2022",
 
         image: "/images/tkees.png",
+        snapshot: "",
 
         liveUrl: "https://tkees.com",
 
@@ -445,6 +451,7 @@ export const projects = {
         year: "2022",
 
         image: "/images/taylorsticth.png",
+        snapshot: "",
 
         liveUrl: "https://www.taylorstitch.com",
 
@@ -516,6 +523,7 @@ export const projects = {
         year: "2022 – Present",
 
         image: "/images/hbcuonly.png",
+        snapshot: "",
 
         liveUrl: "https://hbcuonly.com",
 
@@ -591,6 +599,7 @@ export const projects = {
         year: "2025 – Present",
 
         image: "/images/neonqueer.png",
+        snapshot: "",
 
         liveUrl: "https://neonqueer.com",
 
