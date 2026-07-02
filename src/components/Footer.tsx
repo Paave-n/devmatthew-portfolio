@@ -229,7 +229,7 @@ export default function Footer() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <p>
-                            © 2025 DEVMATTHEW. All rights reserved.
+                            © 2026 DEVMATTHEW. All rights reserved.
                         </p>
                     </motion.div>
 
