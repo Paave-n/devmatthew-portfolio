@@ -908,7 +908,7 @@ export default function Home() {
 
                   <Image
                     src="/images/portpic2.png"
-                    alt="Precious Asubiaro"
+                    alt="Matthew"
                     width={100}
                     height={100}
                     className="h-20 w-20 rounded-full object-cover md:h-24 md:w-24"
