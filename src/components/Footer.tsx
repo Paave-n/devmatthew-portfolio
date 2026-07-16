@@ -135,13 +135,13 @@ export default function Footer() {
                                 rel="noopener noreferrer"
                                 className="group flex items-center gap-3"
                             >
-                                <div className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition-all duration-300 group-hover:border-violet-500/40 group-hover:text-violet-400">
+                                {/* <div className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-800 transition-all duration-300 group-hover:border-violet-500/40 group-hover:text-violet-400">
                                     <FaGithub size={15} />
                                 </div>
 
                                 <span className="text-sm text-zinc-300 transition-colors duration-300 group-hover:text-violet-400">
                                     GitHub
-                                </span>
+                                </span>*/}
                             </a>
 
                             {/* LINKEDIN */}
