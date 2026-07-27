@@ -1,23 +1,22 @@
 export default function ResumeHighlights() {
     const highlights = [
-        {
-            value: "$70K+",
-            label: "Upwork Earnings",
-        },
-        {
-            value: "100%",
-            label: "Job Success",
-        },
-        {
-            value: "5+",
-            label: "Years Experience",
-        },
-        {
-            value: "$9M+",
-            label: "Annual Store Revenue",
-        },
-    ];
-
+    {
+        value: "$70K+",
+        label: "Upwork Earnings",
+    },
+    {
+        value: "100%",
+        label: "Job Success",
+    },
+    {
+        value: "5+",
+        label: "Years Experience",
+    },
+    {
+        value: "Shopify+",
+        label: "Plus Experience",
+    },
+];
     return (
         <section className="py-10">
 

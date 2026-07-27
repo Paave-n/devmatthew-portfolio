@@ -159,7 +159,7 @@ export default function Home() {
       <main id="top" className="relative min-h-screen overflow-hidden bg-black text-white">
         <div className="hero-glow absolute right-0 top-20" />
 
-        <div className="mx-auto max-w-7xl px-6 py-16">
+        <div className="mx-auto max-w-7xl px-6 py-10">
 
           <motion.section
             initial={{ opacity: 0, y: 60 }}
@@ -167,8 +167,36 @@ export default function Home() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8 }}
           >
+            {/* PROJECT LABEL */}
 
+            <div className="mb-4 hidden lg:grid lg:grid-cols-[1fr_1.15fr] lg:gap-14">
+              <div />
+
+              <div className="flex justify-center">
+                <div className="flex items-center gap-2 whitespace-nowrap rounded-full border border-zinc-800 bg-black/80 px-4 py-2 shadow-xl backdrop-blur-md">
+
+                  <span className="h-2 w-2 rounded-full bg-violet-400 shadow-[0_0_12px_rgba(167,139,250,0.8)]" />
+
+                  <a
+                    href="https://clutchcharger.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-zinc-200 transition hover:text-violet-400"
+                  >
+                    Clutch Charger
+                  </a>
+
+                  <span className="h-4 w-px bg-zinc-700" />
+
+                  <span className="text-xs font-medium text-violet-400">
+                    Shopify Plus Store Support
+                  </span>
+
+                </div>
+              </div>
+            </div>
             {/* HERO */}
+
 
             <div className="grid gap-10 lg:grid-cols-[1fr_1.15fr] lg:gap-14">
 
@@ -234,14 +262,14 @@ export default function Home() {
               {/* RIGHT */}
 
               <div className="relative lg:pl-0">
+
                 <div className="absolute inset-0 pointer-events-none bg-violet-500/10 blur-[120px]" />
                 <div className="relative">
-
                   <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
                     <div className="h-[500px] w-[500px] rounded-full bg-violet-500/15 blur-[220px]" />
                   </div>
-
                   <div className="relative mx-auto w-full max-w-[320px] sm:max-w-[420px] lg:max-w-[540px]">
+
                     {/* Laptop Body */}
 
                     <div className="rounded-[32px] border border-zinc-700 bg-zinc-900 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.5)]">
@@ -252,7 +280,7 @@ export default function Home() {
 
                       {/* Screen */}
 
-                      <div className="relative h-[240px] sm:h-[28px] lg:h-[340px] overflow-hidden rounded-[18px] bg-black">
+                      <div className="relative h-[240px] sm:h-[280px] lg:h-[340px] overflow-hidden rounded-[18px] bg-black">
 
                         <video
                           autoPlay
@@ -284,14 +312,12 @@ export default function Home() {
                   </div>
 
                 </div>
-
-
                 {/* PERFORMANCE CARD */}
 
                 <div className="absolute -left-6 top-24 hidden h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md lg:flex">
 
                   <p className="text-center text-sm text-zinc-400">
-                    Annual Sales
+                    Store Annual Sales
                   </p>
 
                   <div className="flex flex-1 items-center justify-center">
@@ -311,7 +337,7 @@ export default function Home() {
                 <div className="absolute -right-6 bottom-24 hidden h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md lg:flex">
 
                   <p className="text-center text-sm text-zinc-400">
-                    Conversion Rate
+                    Store Conversion Rate
                   </p>
 
                   <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
@@ -352,12 +378,31 @@ export default function Home() {
 
             </div>
             <div className="mt-4 flex justify-center lg:hidden">
-              <div className="inline-flex items-center rounded-full border border-zinc-800 bg-black/80 px-5 py-2 text-sm text-zinc-400 backdrop-blur">
-                Shopify Plus
-                <span className="mx-3 text-zinc-600">•</span>
-                CRO
-                <span className="mx-3 text-zinc-600">•</span>
-                Store Management
+              <div className="mt-4 flex justify-center lg:hidden">
+                <div className="inline-flex items-center rounded-full border border-zinc-800 bg-black/80 px-5 py-2 text-sm text-zinc-400 backdrop-blur">
+
+                  <a
+                    href="https://clutchcharger.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition hover:text-violet-400"
+                  >
+                    Clutch Charger
+                  </a>
+
+                  <span className="mx-3 text-zinc-600">•</span>
+
+                  <span className="text-violet-400">
+                    Shopify Plus
+                  </span>
+
+                  <span className="mx-3 text-zinc-600">•</span>
+
+                  <span className="text-violet-400">
+                    Store Support
+                  </span>
+
+                </div>
               </div>
             </div>
 

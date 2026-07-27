@@ -2,18 +2,18 @@ export default function ResumeBrands() {
     const brands = [
         {
             name: "Clutch Charger",
-            revenue: "$6.1M",
-            subtitle: "2025 Annual Revenue",
+            subtitle: "Shopify Plus Development",
+            url: "https://clutchcharger.com",
         },
         {
             name: "Beautiful Disaster",
-            revenue: "$2.1M",
-            subtitle: "2025 Annual Revenue",
+            subtitle: "Shopify Development",
+            url: "https://www.bdrocks.com",
         },
         {
             name: "Freida Rothman",
-            revenue: "$1.4M",
-            subtitle: "2025 Annual Revenue",
+            subtitle: "Shopify Plus Development",
+            url: "https://www.freidarothman.com",
         },
     ];
 
@@ -33,15 +33,16 @@ export default function ResumeBrands() {
                         className="rounded-xl border border-zinc-800 p-5 transition duration-300 hover:border-violet-500/40"
                     >
 
-                        <h3 className="text-lg font-semibold">
+                        <a
+                            href={brand.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-lg font-semibold transition hover:text-violet-400"
+                        >
                             {brand.name}
-                        </h3>
+                        </a>
 
-                        <p className="mt-3 text-2xl font-bold text-violet-400">
-                            {brand.revenue}
-                        </p>
-
-                        <p className="mt-1 text-sm text-zinc-500">
+                        <p className="mt-3 text-sm text-violet-400">
                             {brand.subtitle}
                         </p>
 
@@ -53,9 +54,9 @@ export default function ResumeBrands() {
 
             <p className="mt-5 text-sm leading-6 text-zinc-500">
 
-                Responsible for ongoing Shopify Plus development, conversion optimization,
-                feature implementation, technical maintenance, and experimentation across
-                high-traffic ecommerce storefronts.
+                Shopify Developer responsible for custom theme development, feature implementation,
+                conversion optimization, technical maintenance, and experimentation across
+                Shopify and Shopify Plus storefronts.
 
             </p>
 
