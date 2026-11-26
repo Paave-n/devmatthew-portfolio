@@ -35,6 +35,7 @@ export default function Footer() {
                                 alt="MattDev AI"
                                 width={140}
                                 height={80}
+                                loading="eager"
                                 className="h-auto w-28 object-contain md:mt-0 md:w-32 lg:w-36"
                             />
                         </motion.div>

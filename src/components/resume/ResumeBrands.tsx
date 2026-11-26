@@ -2,17 +2,17 @@ export default function ResumeBrands() {
     const brands = [
         {
             name: "Clutch Charger",
-            subtitle: "Shopify Plus Development",
+            subtitle: "Shopify Plus Development/Support",
             url: "https://clutchcharger.com",
         },
         {
             name: "Beautiful Disaster",
-            subtitle: "Shopify Development",
+            subtitle: "Shopify Plus Development/Support",
             url: "https://www.bdrocks.com",
         },
         {
             name: "Freida Rothman",
-            subtitle: "Shopify Plus Development",
+            subtitle: "Shopify Plus Development/Support",
             url: "https://www.freidarothman.com",
         },
     ];

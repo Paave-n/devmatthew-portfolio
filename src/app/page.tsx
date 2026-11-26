@@ -161,6 +161,7 @@ export default function Home() {
 
         <div className="mx-auto max-w-7xl px-6 py-10">
 
+
           <motion.section
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -174,7 +175,6 @@ export default function Home() {
 
               <div className="flex justify-center">
                 <div className="flex items-center gap-2 whitespace-nowrap rounded-full border border-zinc-800 bg-black/80 px-4 py-2 shadow-xl backdrop-blur-md">
-
                   <span className="h-2 w-2 rounded-full bg-violet-400 shadow-[0_0_12px_rgba(167,139,250,0.8)]" />
 
                   <a
@@ -191,12 +191,11 @@ export default function Home() {
                   <span className="text-xs font-medium text-violet-400">
                     Shopify Plus Store Support
                   </span>
-
                 </div>
               </div>
             </div>
-            {/* HERO */}
 
+            {/* HERO */}
 
             <div className="grid gap-10 lg:grid-cols-[1fr_1.15fr] lg:gap-14">
 
@@ -209,13 +208,13 @@ export default function Home() {
 
                 <h1
                   className="
-                mb-6
-                text-2xl
-                font-bold
-                leading-[1.1]
-                md:text-3xl
-                lg:text-[2.6rem]
-              "
+          mb-6
+          text-2xl
+          font-bold
+          leading-[1.1]
+          md:text-3xl
+          lg:text-[2.6rem]
+        "
                 >
                   <span className="block">
                     Building High-Converting
@@ -226,7 +225,7 @@ export default function Home() {
                   </span>
 
                   <span className="block whitespace-nowrap">
-                    With {" "}
+                    With{" "}
                     <span className="bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
                       AI-Powered
                     </span>{" "}
@@ -262,12 +261,13 @@ export default function Home() {
               {/* RIGHT */}
 
               <div className="relative lg:pl-0">
-
                 <div className="absolute inset-0 pointer-events-none bg-violet-500/10 blur-[120px]" />
+
                 <div className="relative">
                   <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
                     <div className="h-[500px] w-[500px] rounded-full bg-violet-500/15 blur-[220px]" />
                   </div>
+
                   <div className="relative mx-auto w-full max-w-[320px] sm:max-w-[420px] lg:max-w-[540px]">
 
                     {/* Laptop Body */}
@@ -281,7 +281,6 @@ export default function Home() {
                       {/* Screen */}
 
                       <div className="relative h-[240px] sm:h-[280px] lg:h-[340px] overflow-hidden rounded-[18px] bg-black">
-
                         <video
                           autoPlay
                           muted
@@ -295,92 +294,82 @@ export default function Home() {
                             type="video/mp4"
                           />
                         </video>
-
                       </div>
                     </div>
 
                     {/* Laptop Base */}
+
                     <div className="relative mx-auto hidden w-[104%] -translate-x-[2%] lg:block">
                       <div className="relative h-6 rounded-b-full bg-gradient-to-b from-zinc-300 via-zinc-500 to-zinc-700">
-
                         <div className="absolute left-1/2 top-2 -translate-x-1/2 h-2 w-24 rounded-full bg-zinc-800 shadow-inner" />
-
                       </div>
                     </div>
-                    <div className="mx-auto h-10 w-[95%] " />
 
+                    <div className="mx-auto h-10 w-[95%]" />
                   </div>
-
-                </div>
-                {/* PERFORMANCE CARD */}
-
-                <div className="absolute -left-6 top-24 hidden h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md lg:flex">
-
-                  <p className="text-center text-sm text-zinc-400">
-                    Store Annual Sales
-                  </p>
-
-                  <div className="flex flex-1 items-center justify-center">
-                    <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
-                      $6.1M+
-                    </h3>
-                  </div>
-
-                  <p className="text-center text-sm text-zinc-400">
-                    2025
-                  </p>
-
                 </div>
 
-                {/* CONVERSION CARD */}
+                {/* PERFORMANCE CARD AND CONVERSION CARD TEMPORARILY DISABLED */}
 
-                <div className="absolute -right-6 bottom-24 hidden h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md lg:flex">
+                {/*
+      <div className="absolute -left-6 top-24 hidden h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md lg:flex">
+        <p className="text-center text-sm text-zinc-400">
+          Store Annual Sales
+        </p>
 
-                  <p className="text-center text-sm text-zinc-400">
-                    Store Conversion Rate
-                  </p>
+        <div className="flex flex-1 items-center justify-center">
+          <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
+            $6.1M+
+          </h3>
+        </div>
 
-                  <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
-                    3.13%
-                  </h3>
+        <p className="text-center text-sm text-zinc-400">
+          2025
+        </p>
+      </div>
 
-                  <svg
-                    className="mx-auto h-12 w-full"
-                    viewBox="0 0 120 40"
-                    fill="none"
-                  >
-                    <path
-                      d="M0 30
-         C20 25,
-         35 35,
-         55 20
-         S90 25,
-         120 5"
-                      stroke="#8b5cf6"
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                    />
+      <div className="absolute -right-6 bottom-24 hidden h-[170px] w-[160px] flex-col justify-between rounded-3xl border border-zinc-800 bg-black/95 p-5 shadow-2xl backdrop-blur-md lg:flex">
+        <p className="text-center text-sm text-zinc-400">
+          Store Conversion Rate
+        </p>
 
-                    <circle
-                      cx="120"
-                      cy="5"
-                      r="3"
-                      fill="#8b5cf6"
-                    />
-                  </svg>
+        <h3 className="text-center text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-600 bg-clip-text text-transparent">
+          3.13%
+        </h3>
 
-                  <p className="text-center text-sm text-zinc-400">
-                    Annual Average
-                  </p>
+        <svg
+          className="mx-auto h-12 w-full"
+          viewBox="0 0 120 40"
+          fill="none"
+        >
+          <path
+            d="M0 30 C20 25, 35 35, 55 20 S90 25, 120 5"
+            stroke="#8b5cf6"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
 
-                </div>
+          <circle
+            cx="120"
+            cy="5"
+            r="3"
+            fill="#8b5cf6"
+          />
+        </svg>
+
+        <p className="text-center text-sm text-zinc-400">
+          Annual Average
+        </p>
+      </div>
+      */}
               </div>
-
             </div>
+
+            {/* MOBILE PROJECT LABEL */}
+
             <div className="mt-4 flex justify-center lg:hidden">
               <div className="mt-4 flex justify-center lg:hidden">
                 <div className="inline-flex items-center rounded-full border border-zinc-800 bg-black/80 px-5 py-2 text-sm text-zinc-400 backdrop-blur">
-
                   <a
                     href="https://clutchcharger.com"
                     target="_blank"
@@ -401,12 +390,11 @@ export default function Home() {
                   <span className="text-violet-400">
                     Store Support
                   </span>
-
                 </div>
               </div>
             </div>
-
           </motion.section>
+
 
           {/* AI WORKFLOW */}
 
